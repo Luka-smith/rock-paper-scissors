@@ -3,6 +3,7 @@ let playerCount = 0;
 let compCount = 0;
 
 function game() {
+  // starts 5 rounds game
   for (i = 0; i < 5; i++) {
     console.log(playRound());
   }
@@ -18,10 +19,12 @@ function game() {
 let playerSelection;
 
 function getComputerChoice() {
+  //random computer choice
   let compChoice = choiceArr[Math.floor(Math.random() * choiceArr.length)];
   return compChoice;
 }
 function caseSensePlayer() {
+  // In sensetizing player entry
   let playerInput = prompt("Your choice: ");
   let insentsitized =
     playerInput.slice(0, 1).toUpperCase() +
@@ -33,6 +36,7 @@ function caseSensePlayer() {
 let computerSelection;
 
 function playRound(playerSelection, computerSelection) {
+  //initial round
   playerSelection = caseSensePlayer();
   computerSelection = getComputerChoice();
   console.log(playerSelection, computerSelection);
