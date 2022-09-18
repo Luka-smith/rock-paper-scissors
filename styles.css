@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: bisque;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 600px;
+  margin: auto;
+}
+.head {
+  justify-content: center;
+  font-size: 32px;
+}
+div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px;
+  align-items: center;
+}
+
+button {
+  padding: 40px;
+  background-color: rgb(112, 99, 79);
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+  /* width: 140px; */
+  flex: 1;
+}
+
+h1 {
+  color: rgb(112, 99, 79);
+}
+
+.scorePara {
+  text-align: center;
+}
+
+.para,
+.score {
+  color: rgb(112, 99, 79);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+/* .para {
+  display: flex;
+  justify-content: space-between;
+} */
